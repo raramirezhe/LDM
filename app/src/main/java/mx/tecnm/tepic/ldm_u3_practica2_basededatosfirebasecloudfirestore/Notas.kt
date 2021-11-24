@@ -51,7 +51,7 @@ class Notas (p: Context) {
         val cursor = tblNotas.query("NOTAS", arrayOf("*"),null,null,null,null,null)
         if(cursor.moveToFirst()){
             do{
-                var dato = "${cursor.getString(1)}:"+"\n"+cursor.getString(2)
+                var dato = "**${cursor.getString(1)}**"+"\n"+cursor.getString(2)
                 resultado.add(dato)
             }while(cursor.moveToNext())
         }else{

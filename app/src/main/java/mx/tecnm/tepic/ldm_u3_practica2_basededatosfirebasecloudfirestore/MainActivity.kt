@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             if(respuesta == true){
                 Toast.makeText(this,"SINCRONIZACIÓN EXITOSA",Toast.LENGTH_LONG).show()
             }else{
-                Toast.makeText(this,"NO HAY DATA",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"NO HAY DATOS",Toast.LENGTH_LONG).show()
             }
         }
 
