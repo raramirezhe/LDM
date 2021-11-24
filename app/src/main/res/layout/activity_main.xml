@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="23dp"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTAS"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="484dp"
+        android:id="@+id/listaDeNota"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+    <ImageButton
+        android:id="@+id/añadirNota"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_baseline_add_circle_24"
+        android:background="@color/white"
+        android:layout_weight="1"
+        />
+
+        <ImageButton
+            android:id="@+id/sync"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_baseline_sync_24"
+            android:background="@color/white"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
